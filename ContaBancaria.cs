@@ -22,49 +22,48 @@
             NumAgencia = randNum.Next(100, 999);
         }
 
-        public void Depositar(float valor)
+        public bool ChecarValor(float valor)
         {
             if (valor <= 0)
             {
-                Console.WriteLine("O valor de depósito deve ser maior que zero.");
+                Console.WriteLine("O valor de depósito deve ser maior que zero.");  
+                return false;
             }
-            else
-            {
+            
+            return true;
+        }
+
+        public bool Depositar(float valor)
+        {
+            if(ChecarValor(valor)){
                 Saldo += valor;
+                return true;
             }
+
+            return false;
         }
 
-        public void Sacar(float valor)
+        public bool Sacar(float valor)
         {
-            if (valor <= 0)
+            if (!ChecarValor(valor) || valor > Saldo)
             {
-                Console.WriteLine("O valor de saque deve ser maior que zero.");
+                return false;
             }
-            else if (valor > Saldo)
-            {
-                Console.WriteLine("Saldo insuficiente para saque.");
-            }
-            else
-            {
-                Saldo -= valor;
-            }
+
+            Saldo -= valor;
+            return true;
         }
 
-        public void Transferir(float valor, ContaBancaria contaDestino)
+        public bool Transferir(float valor, ContaBancaria contaDestino)
         {
-            if (valor <= 0)
+            if (!ChecarValor(valor) || valor > Saldo)
             {
-                Console.WriteLine("O valor de transferência deve ser maior que zero.");
+                return false;
             }
-            else if (valor > Saldo)
-            {
-                Console.WriteLine("Saldo insuficiente para transferência.");
-            }
-            else
-            {
-                Sacar(valor);
-                contaDestino.Depositar(valor);
-            }
+
+            Sacar(valor);
+            contaDestino.Depositar(valor);
+            return true;
         }
     }
 }
