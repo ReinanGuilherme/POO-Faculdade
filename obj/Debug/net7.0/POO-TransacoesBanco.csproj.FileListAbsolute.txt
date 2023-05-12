@@ -1,0 +1,15 @@
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.csproj.AssemblyReference.cache
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.AssemblyInfoInputs.cache
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.AssemblyInfo.cs
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.csproj.CoreCompileInputs.cache
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\bin\Debug\net7.0\POO-TransacoesBanco.exe
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\bin\Debug\net7.0\POO-TransacoesBanco.deps.json
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\bin\Debug\net7.0\POO-TransacoesBanco.runtimeconfig.json
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\bin\Debug\net7.0\POO-TransacoesBanco.dll
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\bin\Debug\net7.0\POO-TransacoesBanco.pdb
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.dll
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\refint\POO-TransacoesBanco.dll
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.pdb
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\POO-TransacoesBanco.genruntimeconfig.cache
+C:\Users\Reinan.Neto\Desktop\Projetos Reinan\POO-TransacoesBanco\obj\Debug\net7.0\ref\POO-TransacoesBanco.dll
