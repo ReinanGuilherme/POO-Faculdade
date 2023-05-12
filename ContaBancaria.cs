@@ -18,7 +18,7 @@
 
 
             Random randNum = new Random();
-            NumAgencia = randNum.Next(1000, 9999);
+            NumConta = randNum.Next(1000, 9999);
             NumAgencia = randNum.Next(100, 999);
         }
 
@@ -62,7 +62,7 @@
             }
             else
             {
-                Saldo -= valor;
+                Sacar(valor);
                 contaDestino.Depositar(valor);
             }
         }
