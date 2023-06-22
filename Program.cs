@@ -2,26 +2,48 @@
 
 
 
-ContaBancaria pessoa1 = new ContaBancaria("Reinan O Lindo", "111.111.111-43", TipoConta.ContaCorrente);
+ContaCorrente contaReinan = new ContaCorrente("Reinan Guilherme", 120, 2, 1234, 3, "cesta 1", "10.2");
+ContaPoupanca contaCPBruno = new ContaPoupanca("Bruno Reis", 120, 2, 1234, 3);
 
-ContaBancaria pessoa2 = new ContaBancaria("Pessoa não importante", "222.222.222-86", TipoConta.ContaCorrente);
+Console.WriteLine("Saldo inicial da Conta Corrente:");
+contaReinan.Imprimir();
 
-pessoa1.Depositar(1000);
-pessoa2.Depositar(500);
+double valorDepositoCC = 100;
+contaReinan.Depositar(valorDepositoCC);
+Console.WriteLine($"Depósito de R${valorDepositoCC} realizado na Conta Corrente:");
+contaReinan.Imprimir();
 
-Console.WriteLine("Saldo da Pessoa 1: " + pessoa1.Saldo);
-Console.WriteLine("Saldo da Pessoa 2: " + pessoa2.Saldo);
+double valorSaqueCC = 20;
+contaReinan.Sacar(valorSaqueCC);
+Console.WriteLine($"Saque de R${valorSaqueCC} realizado na Conta Corrente:");
+contaReinan.Imprimir();
 
-pessoa1.Transferir(500, pessoa2);
+Console.WriteLine("Saldo inicial da Conta Poupança:");
+contaCPBruno.Imprimir();
 
-Console.WriteLine("Saldo da Pessoa 1 após transferência: " + pessoa1.Saldo);
-Console.WriteLine("Saldo da Pessoa 2 após transferência: " + pessoa2.Saldo);
+double valorDepositoCP = 200;
+contaCPBruno.Depositar(valorDepositoCP);
+Console.WriteLine($"Depósito de R${valorDepositoCP} realizado na Conta Poupança:");
+contaCPBruno.Imprimir();
 
-pessoa2.Sacar(200);
+double valorSaqueCP = 50;
+contaCPBruno.Sacar(valorSaqueCP);
+Console.WriteLine($"Saque de R${valorSaqueCP} realizado na Conta Poupança:");
+contaCPBruno.Imprimir();
 
-Console.WriteLine("Saldo da Pessoa 2 após saque: " + pessoa2.Saldo);
-Console.WriteLine("------------RESUMO------------");
-Console.WriteLine("Saldo da Pessoa 1: " + pessoa1.Saldo);
-Console.WriteLine("Saldo da Pessoa 2: " + pessoa2.Saldo);
+// Operação PIX
+double valorPix = 30;
+string nomeDestinatario = "Bruno";
 
-Console.ReadLine();
+Console.WriteLine("Realizando operação PIX na Conta Corrente:");
+contaReinan.RealizarPix(valorPix, nomeDestinatario, contaCPBruno, contaCPBruno.GetChavePix());
+contaReinan.Imprimir();
+
+valorPix = 80;
+nomeDestinatario = "Reinan";
+
+Console.WriteLine("Realizando operação PIX na Conta Poupança:");
+contaCPBruno.RealizarPix(valorPix, nomeDestinatario, contaReinan, contaReinan.GetChavePix());
+contaCPBruno.Imprimir();
+
+Console.ReadKey();
